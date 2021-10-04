@@ -28,11 +28,6 @@ class UsersController < ApplicationController
     email = params[:email]
     password = params[:password]
     user = User.find_by(email: email, password: password)
-    if user.id
-      found = true
-    else
-      found = false
-    end
-    render plain: found
+    render plain: user.present?
   end
 end
