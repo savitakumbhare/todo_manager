@@ -34,7 +34,7 @@ body {
   margin-right: 8px;
   line-height: 1.4;
 }
-TodoSectionTitle-remainingCount {
+.TodoSectionTitle-remainingCount {
   font-size: 12px;
 }
 .TodoSection-todo {
