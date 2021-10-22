@@ -1,11 +1,11 @@
 body {
   font-family: sans-serif;
   max-width: 600px;
-  /*margin: 0 auto;*/
-  margin-top: 32px;
+  margin: 0 auto;
+  /*margin-top: 32px;
   margin-bottom: 0;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
 }
 .SplashImage {
   max-width: 300px;
@@ -44,8 +44,8 @@ TodoSectionTitle-remainingCount {
   color: #453c52;
 }
 .TodoSection {
-  margin-bottom: auto;
-  margin-left: 32x;
+  margin-bottom: 40px;
+  margin-left: 32px;
   padding: 32px;
 }
 .AddTodo {
@@ -118,6 +118,12 @@ TodoSectionTitle-remainingCount {
   display: inline;
 }
 .TodoItem-dueDate {
+  margin-left: 10px;
+  color: rgb(95, 92, 92);
+  font-size: 12px;
+  display: inline;
+}
+.TodoItem-listItem {
   margin-left: 10px;
   color: rgb(95, 92, 92);
   font-size: 12px;
