@@ -1,14 +1,7 @@
 body {
   font-family: sans-serif;
-  max-width: 600px;
+  max-width: 100px;
   margin: 0 auto;
-  /*margin-top: 32px;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;*/
-}
-.SplashImage {
-  max-width: 300px;
 }
 .TodoPageMain {
   display: flex;
@@ -34,7 +27,7 @@ body {
   margin-right: 8px;
   line-height: 1.4;
 }
-TodoSectionTitle-remainingCount {
+.TodoSectionTitle-remainingCount {
   font-size: 12px;
 }
 .TodoSection-todo {
@@ -44,7 +37,7 @@ TodoSectionTitle-remainingCount {
   color: #453c52;
 }
 .TodoSection {
-  margin-bottom: 40px;
+  margin-bottom: auto;
   margin-left: 32px;
   padding: 32px;
 }
@@ -111,21 +104,21 @@ TodoSectionTitle-remainingCount {
   width: 16px;
   height: 16px;
 }
-.TodoItem-overdueLabel {
-  margin-left: 10px;
-  color: rgb(206, 31, 31);
-  font-size: 12px;
-  display: inline;
-}
 .TodoItem-dueDate {
   margin-left: 10px;
   color: rgb(95, 92, 92);
   font-size: 12px;
   display: inline;
 }
+
 .TodoItem-listItem {
   margin-left: 10px;
   color: rgb(95, 92, 92);
-  font-size: 12px;
+  font-size: 14px;
   display: inline;
+}
+.TodoItem-due_Date {
+  font-size: 10px;
+  color: #5a5c5b;
+  margin: 10px;
 }
