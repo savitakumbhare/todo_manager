@@ -122,3 +122,10 @@ body {
   color: #5a5c5b;
   margin: 10px;
 }
+.TodoItem-container_textLineThrouh {
+  margin-left: 10px;
+  color: rgb(95, 92, 92);
+  font-size: 14px;
+  display: inline;
+  text-decoration: line-through;
+}
