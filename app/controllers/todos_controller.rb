@@ -20,7 +20,6 @@ class TodosController < ApplicationController
       due_date: due_date,
       completed: false,
     )
-
     redirect_to todos_path
   end
 
@@ -30,6 +29,6 @@ class TodosController < ApplicationController
     todo = Todo.find(id)
     todo.completed = completed
     todo.save!
-    render plain: " Updated todo completed status to #{completed}"
+    redirect_to todos_path
   end
 end
