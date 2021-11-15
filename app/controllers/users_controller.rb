@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
-  skip_before_action :verify_authenticity_token
+  skip_before_action :ensure_user_logged_in
+
+  def new
+    render "users/new"
+  end
 
   def index
     render plain: User.order(:id).map { |user| user.to_user_list }.join("\n")
@@ -12,16 +16,14 @@ class UsersController < ApplicationController
   end
 
   def create
-    name = params[:name]
-    email = params[:email]
-    password = params[:password]
-    new_user = User.create!(
-      name: name,
-      email: email,
-      password: password,
+    user = User.create!(
+      first_name: params[:first_name],
+      last_name: params[:last_name],
+      email: params[:email],
+      password: params[:password],
     )
-    response_text = "Hey, your new User is created with id #{new_user.id}"
-    render plain: response_text
+
+    redirect_to "/"
   end
 
   def login

@@ -6,7 +6,8 @@ class TodosController < ApplicationController
   def show
     id = params[:id]
     todo = Todo.find(id)
-    render plain: todo.to_pleasant_string
+    render "todo"
+    #render plain: todo.to_pleasant_string
   end
 
   def create
@@ -16,6 +17,7 @@ class TodosController < ApplicationController
       todo_text: todo_text,
       due_date: due_date,
       completed: false,
+      user_id: current_user.id,
     )
     redirect_to todos_path
   end
