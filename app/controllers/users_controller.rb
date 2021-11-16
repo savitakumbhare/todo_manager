@@ -23,6 +23,7 @@ class UsersController < ApplicationController
       password: params[:password],
     )
     if user.save
+      session[:current_user_id] = user.id
       redirect_to "/"
     else
       render "users/new"

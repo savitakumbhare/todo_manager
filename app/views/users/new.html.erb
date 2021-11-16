@@ -2,8 +2,8 @@
 <section class = "UsersNew" >
   <%= form_with url: users_path do |form| %>
     <div  class= "Form-section">
-      <p class = " FormInput-label"> First Name: </p>
-      <%= form.text_field :first_name, class: "Form_input" %>
+      <p class = " FormInput-label" > First Name: </p>
+      <%= form.text_field :first_name, class: "Form_input", autofocus: true %>
     </div>
     <div  class= "Form-section">
       <p class = " FormInput-label"> Last Name:  </p>
